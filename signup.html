@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="false">
+			<div class="signup">
+				<form action="thankyou.html">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="firstName" placeholder="First Name" required autocomplete="off" tabindex="0">
+					<input type="text" name="lastName" placeholder="Last Name" required autocomplete="off" tabindex="1">
+					<input type="hidden" value="1" name="UserID">
+					<input type="email" name="Email" placeholder="Email" required tabindex="2">
+					<input type="text" name="jobtittle" placeholder="Job Tittle" required autocomplete="off" tabindex="3">
+					<input type="password" name="password" placeholder="Password" accesskey="p" tabindex="4">
+					<input type="password" name="password" placeholder="Confirm Password" accesskey="p" tabindex="5">
+					<input type="date" id="BirthDate" name="Birth Date" placeholder="Birth date" tabindex="6">
+					<label id="lbl2">Profile picture</label>
+					<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" tabindex="7">
+					<div class="radio">
+						<input type="radio" name="Gender" value="Female" checked>Male 
+						<input type="radio" name="Gender" value="Male">Female
+					</div>
+					<button type="submit">submit</button>
+					<button type="reset">Reset</button>
+					<a class="btn" href="login.html">Have an account?</a>
+					<div class="terms">
+						<input type="checkbox" name="terms" value="terms" tabindex="12"> <label> <a href="terms.html"><h4>I agree to terms and condition</h4> </a> </label>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+</html>
